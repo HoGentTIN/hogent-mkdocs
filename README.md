@@ -57,12 +57,7 @@ mkdocs serve
 
 ### Theme
 
-If you want another theme, you can change edit the `extra_css` entry in [mkdocs.yml](./mkdocs.yml) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-mkdocs/docs/theme.css .
-
-If you copy or fork this repo, but always want to keep the theme of your documentation website at any time automatically in sync with this repo, you can ... .
-
-1. Set the `extra_css` entry in [mkdocs.yml](./mkdocs.yml) to the URL https://hogenttin.github.io/hogent-mkdocs/docs/theme.css .
-2. Delete the [local CSS file](./docs/theme.css).
+If you want another theme, you can change edit the `theme` entry in [mkdocs.yml](./mkdocs.yml). You can find a lot of themes at https://github.com/mkdocs/catalog#-theming .
 
 ### [MkDocs](https://www.mkdocs.org/) options
 
