@@ -9,11 +9,14 @@ theme:
     name: readthedocs
     logo: https://www.hogent.be/sites/hogent/assets/Image/logo-1.jpg
 markdown_extensions:
+    - footnotes
     - pymdownx.arithmatex:
           generic: true
     - pymdownx.magiclink
     - pymdownx.tasklist
     - pymdownx.tilde
+    - toc:
+          permalink: true
 plugins:
     - mermaid2
     - plantuml:
