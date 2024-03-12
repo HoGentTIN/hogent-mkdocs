@@ -1,0 +1,18 @@
+site_name: hogent-mkdocs
+site_url: https://hogent.be
+nav:
+    - Home: ./index.md
+    - Basic examples: ./examples/h1.md
+    - Advanced examples: ./examples/h2.md
+    - Links: ./links.md
+theme:
+    name: readthedocs
+    logo: https://www.hogent.be/sites/hogent/assets/Image/logo-1.jpg
+markdown_extensions:
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.magiclink
+    - pymdownx.tasklist
+    - pymdownx.tilde
+extra_javascript:
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
