@@ -14,5 +14,13 @@ markdown_extensions:
     - pymdownx.magiclink
     - pymdownx.tasklist
     - pymdownx.tilde
+plugins:
+    - mermaid2
+    - plantuml:
+          puml_url: https://www.plantuml.com/plantuml/
+          num_workers: 8
+    - search
 extra_javascript:
     - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+extra_css:
+    - ./theme.css

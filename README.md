@@ -7,7 +7,7 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 ## Installation
 
 1. Install [python](https://www.python.org/downloads/) .
-2. (optional) Create a [Python environment](https://docs.python.org/3/library/venv.html). E.g. for Linux:
+2. (optional) Create a [python environment](https://docs.python.org/3/library/venv.html). E.g. for Linux:
 
     ```console
     python -m venv venv
@@ -17,7 +17,7 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 3. Install the dependencies:
 
     ```console
-    pip install -r requirements.txt
+    pip install --requirement requirements.txt
     ```
 
 ## Basic usage
@@ -52,7 +52,7 @@ A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been add
 
 ### Theme
 
-If you want another theme, you can change edit the `theme.css` header tag in [index.html](./docs/index.html) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-docsify/theme.css . Using this specific URL will always keep your theme up to date with the one on this repo.
+If you want another theme, you can change edit the `extra_css` entry in [mkdocs.yml](./mkdocs.yml) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-mkdocs/docs/theme.css . Using this specific URL will always keep your theme up to date with the one on this repo.
 
 ### [MkDocs](https://www.mkdocs.org/) options
 
