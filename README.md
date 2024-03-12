@@ -1,10 +1,27 @@
 # README
 
-## Demo
+Build a documentation website using markdown.
 
 You can see the slides of this repository at https://hogenttin.github.io/hogent-mkdocs/ . Play with it to see what it can do!
 
-## Installation
+## Table of Contents
+
+-   [Basic usage](#basic-usage)
+    -   [Installation](#installation)
+    -   [How do I use this?](#how-do-i-use-this)
+    -   [Live preview](#live-preview)
+-   [Configuration](#configuration)
+    -   [Theme](#theme)
+    -   [MkDocs options](#mkdocs-options)
+    -   [MkDocs plugins](#mkdocs-plugins)
+-   [Additional tools](#additional-tools)
+    -   [Automatic deployment](#automatic-deployment)
+    -   [Formatting](#formatting)
+    -   [Linting](#linting)
+
+## Basic usage
+
+### Installation
 
 1. Install [python](https://www.python.org/downloads/) .
 2. (optional) Create a [python environment](https://docs.python.org/3/library/venv.html). E.g. for Linux:
@@ -20,21 +37,42 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
     pip install --requirement requirements.txt
     ```
 
-## Basic usage
+### How do I use this?
 
-Edit, add or delete your markdown files in the [docs](./docs/) directory.
+Edit, add or delete your markdown files in the [docs](./docs/) directory, and run `mkdocs build` to generate the website in the [site](./site) folder. **That's all to get started!** :rocket:
 
-### Creating slides (debugging)
+If you want to edit the sidebar, then just edit the `nav` entry in [mkdocs.yml](./mkdocs.yml) .
 
-You can start up a live preview:
+### Live preview
+
+MkDocs allows you to start up a live preview, so you can instantly see how your content looks like whilst editing the markdown files.
 
 ```console
 mkdocs serve
 ```
 
-## Advanced
+## Configuration
 
-**You don't really need this** if you want to keep things simple, but it's here if you want an example.
+:bulb: **You don't have to change these files or settings** if you want to keep things simple. In that case, just ignore this section.
+
+### Theme
+
+If you want another theme, you can change edit the `extra_css` entry in [mkdocs.yml](./mkdocs.yml) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-mkdocs/docs/theme.css .
+
+If you copy or fork this repo, but always want to keep the theme of your documentation website at any time automatically in sync with this repo, you can ... .
+
+1. Set the `extra_css` entry in [mkdocs.yml](./mkdocs.yml) to the URL https://hogenttin.github.io/hogent-mkdocs/docs/theme.css .
+2. Delete the [local CSS file](./docs/theme.css).
+
+### [MkDocs](https://www.mkdocs.org/) options
+
+You can add them to [mkdocs.yml](./mkdocs.yml) .
+
+### [MkDocs](https://www.mkdocs.org/) plugins
+
+You can add additional functionality using [MkDocs plugins](https://github.com/mkdocs/catalog). These can be enabled by editing [mkdocs.yml](./mkdocs.yml) . E.g., the [Mermaid](https://github.com/fralau/mkdocs-mermaid2-plugin) plugin for drawing graphs is added in this repo as an example on how to do it.
+
+## Additional tools
 
 ### Automatic deployment
 
@@ -42,18 +80,10 @@ This repo automatically builds the website and pushes them to https://hogenttin.
 
 ### Formatting
 
+An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig) .
+
 A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
 
 ### Linting
 
 A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
-
-## Configuration
-
-### Theme
-
-If you want another theme, you can change edit the `extra_css` entry in [mkdocs.yml](./mkdocs.yml) to point to another CSS file. You can also use an existing link like https://hogenttin.github.io/hogent-mkdocs/docs/theme.css . Using this specific URL will always keep your theme up to date with the one on this repo.
-
-### [MkDocs](https://www.mkdocs.org/) options
-
-You can add them to [mkdocs.yml](./mkdocs.yml) .
