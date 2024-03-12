@@ -38,6 +38,7 @@ body {
 .rst-content h6 {
     font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 800;
+    line-height: 1em;
 }
 
 .rst-content h1 {
@@ -111,18 +112,6 @@ ul ul ul {
     list-style-type: circle;
 }
 
-/* Uncomment if you want the theme to fill the entire width of the screen
- */
-/* .wy-nav-content {
+.wy-nav-content {
     max-width: 100%;
-} */
-
-/* tr,
-th {
-    border-style: none;
 }
-
-td {
-    border-style: solid none none none;
-    border-color: var(--hogent-black);
-} */
