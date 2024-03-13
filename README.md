@@ -79,6 +79,8 @@ An [editorconfig](https://editorconfig.org/) config has been added in [.editorco
 
 A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
 
+:warning: Use 4 spaces for indentation of nested lists. Otherwise the nesting may not work. This is consistent with the [original MarkDown](https://daringfireball.net/projects/markdown/syntax#list) and the [CommonMark](https://spec.commonmark.org/0.31.2/#lists) specs.
+
 ### Linting
 
 A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
