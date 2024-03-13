@@ -65,7 +65,7 @@ You can add them to [mkdocs.yml](./mkdocs.yml) .
 
 ### [MkDocs](https://www.mkdocs.org/) plugins
 
-You can add additional functionality using [MkDocs plugins](https://github.com/mkdocs/catalog). These can be enabled by editing [mkdocs.yml](./mkdocs.yml) . E.g., the [Mermaid](https://github.com/fralau/mkdocs-mermaid2-plugin) plugin for drawing graphs is added in this repo as an example on how to do it.
+You can add additional functionality using [MkDocs plugins](https://github.com/mkdocs/catalog). These can be enabled by editing [mkdocs.yml](./mkdocs.yml) . E.g., the [mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin) plugin for showing the timestamp of the last edit is added in this repo as an example on how to do it.
 
 ## Additional tools
 
