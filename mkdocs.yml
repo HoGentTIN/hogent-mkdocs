@@ -1,6 +1,10 @@
 site_name: hogent-mkdocs
 site_url: https://hogent.be
 copyright: Copyright &copy; HOGENT (<a href="https://hogent.be">https://hogent.be</a>)
+# If you want MkDocs to automatically generate a table of contents, then remove the complete `nav` section.
+# See https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation for more information.
+# Use `index.md` as the default file for the homepage. MkDocs will automatically pick this file up.
+# See https://www.mkdocs.org/user-guide/writing-your-docs/#index-pages for more information.
 nav:
     - Home: ./index.md
     - Basic examples: ./examples/h1.md
