@@ -1,5 +1,6 @@
 site_name: hogent-mkdocs
 site_url: https://hogent.be
+repo_url: https://github.com/HoGentTIN/hogent-mkdocs # Change this to your own Git repository (or leave it out).
 copyright: Copyright &copy; HOGENT (<a href="https://hogent.be">https://hogent.be</a>)
 # If you want MkDocs to automatically generate a table of contents, then remove the complete `nav` section.
 # See https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation for more information.
@@ -49,8 +50,10 @@ markdown_extensions:
     - toc:
           permalink: true
 plugins:
+    - git-authors:
+          show_email_address: false # Disabled to prevent spam when your non-HOGENT e-mail address is used.
     - git-revision-date-localized:
-          fallback_to_build_date: true
+          enable_creation_date: true
           type: datetime
     - plantuml:
           puml_url: https://www.plantuml.com/plantuml/
