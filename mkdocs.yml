@@ -55,6 +55,8 @@ plugins:
     - git-revision-date-localized:
           enable_creation_date: true
           type: datetime
+          # Don't forget to adjust your CI pipeline to get all the info necessary:
+          # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin?tab=readme-ov-file#note-when-using-build-environments
     - plantuml:
           puml_url: https://www.plantuml.com/plantuml/
           num_workers: 8
