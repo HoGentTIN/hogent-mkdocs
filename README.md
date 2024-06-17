@@ -51,6 +51,12 @@ MkDocs allows you to start up a live preview, so you can instantly see how your 
 mkdocs serve
 ```
 
+---
+
+<details>
+
+<summary>Configuration</summary>
+
 ## Configuration
 
 :bulb: **You don't have to change these files or settings** if you want to keep things simple. In that case, just ignore this section.
@@ -67,7 +73,17 @@ You can add them to [mkdocs.yml](./mkdocs.yml) .
 
 You can add additional functionality using [MkDocs plugins](https://github.com/mkdocs/catalog). These can be enabled by editing [mkdocs.yml](./mkdocs.yml) . E.g., the [mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin) plugin for showing the timestamp of the last edit is added in this repo as an example on how to do it.
 
+</details>
+
+---
+
+<details>
+
+<summary>Additional tools</summary>
+
 ## Additional tools
+
+:bulb: **You don't need this** if you want to keep things simple. In that case, just ignore this section. Otherwise, it's here if you want an example.
 
 ### Automatic deployment
 
@@ -98,3 +114,5 @@ yamllint .
 ```
 
 You can also use the [pre-commit](https://pre-commit.com/) hooks in [.pre-commit-config.yaml](./.pre-commit-config.yaml) to automatically check this at every local commit.
+
+</details>
