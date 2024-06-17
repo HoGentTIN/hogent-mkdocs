@@ -26,14 +26,14 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 1. Install [python](https://www.python.org/downloads/) .
 2. (optional) Create a [python environment](https://docs.python.org/3/library/venv.html). E.g. for Linux:
 
-    ```console
+    ```bash
     python -m venv venv
     source ./venv/bin/activate
     ```
 
 3. Install the dependencies:
 
-    ```console
+    ```bash
     pip install --requirement requirements.txt
     ```
 
@@ -47,7 +47,7 @@ If you want to edit the sidebar, then just edit the `nav` entry in [mkdocs.yml](
 
 MkDocs allows you to start up a live preview, so you can instantly see how your content looks like whilst editing the markdown files.
 
-```console
+```bash
 mkdocs serve
 ```
 
@@ -75,12 +75,26 @@ This repo automatically builds the website and pushes them to https://hogenttin.
 
 ### Formatting
 
-An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig) .
+An [editorconfig](https://editorconfig.org/) config has been added in [.editorconfig](./.editorconfig), which works nicely together with [prettier](https://prettier.io/docs/en/):
 
-A [prettier](https://prettier.io/docs/en/) config has been added in [.prettierrc.json5](./.prettierrc.json5) .
+```bash
+prettier --write "**/*.{md,yml,yaml}"
+```
 
 :warning: Use 4 spaces for indentation of nested lists. Otherwise the nesting may not work. This is consistent with the [original MarkDown](https://daringfireball.net/projects/markdown/syntax#list) and the [CommonMark](https://spec.commonmark.org/0.31.2/#lists) specs.
 
 ### Linting
 
-A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint.jsonc](./.markdownlint.jsonc) .
+A [markdownlint](https://github.com/DavidAnson/markdownlint) config has been added in [.markdownlint-cli2.yaml](./.markdownlint-cli2.yaml):
+
+```bash
+markdownlint-cli2 "**/*.md"
+```
+
+A [yamllint](https://yamllint.readthedocs.io/en/stable/index.html) config has been added in [.yamllint.yaml](./.yamllint.yaml):
+
+```bash
+yamllint .
+```
+
+You can also use the [pre-commit](https://pre-commit.com/) hooks in [.pre-commit-config.yaml](./.pre-commit-config.yaml) to automatically check this at every local commit.
