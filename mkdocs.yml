@@ -13,7 +13,7 @@ nav:
   - Links: ./links.md
 theme:
   name: material # https://squidfunk.github.io/mkdocs-material/setup/
-  favicon: https://hogent.be/themes/hogent/images/ico/favicon.ico
+  favicon: https://hogenttin.github.io/cdn/favicon/favicon.ico
   features:
     - content.code.copy
     - navigation.path
@@ -24,7 +24,7 @@ theme:
   font:
     text: Montserrat
     code: Inconsolata
-  logo: https://www.hogent.be/sites/hogent/assets/Image/logo-1.jpg
+  logo: https://hogenttin.github.io/cdn/logo/HOGENT_Neg.png
   palette:
     # Palette toggle for light mode
     - scheme: default
