@@ -4,8 +4,6 @@ Build a documentation website using markdown.
 
 You can see the slides of this repository at https://hogenttin.github.io/hogent-mkdocs/ . Play with it to see what it can do!
 
-## Table of Contents
-
 ## Basic usage
 
 ### Installation
