@@ -11,16 +11,16 @@ You can see the slides of this repository at https://hogenttin.github.io/hogent-
 1. Install [python](https://www.python.org/downloads/) .
 2. (optional) Create a [python environment](https://docs.python.org/3/library/venv.html). E.g. for Linux:
 
-    ```bash
-    python -m venv venv
-    source ./venv/bin/activate
-    ```
+   ```bash
+   python -m venv venv
+   source ./venv/bin/activate
+   ```
 
 3. Install the dependencies:
 
-    ```bash
-    pip install --requirement requirements.txt
-    ```
+   ```bash
+   pip install --requirement requirements.txt
+   ```
 
 ### How do I use this?
 
@@ -75,4 +75,3 @@ You can add additional functionality using [MkDocs plugins](https://github.com/m
 This repo automatically builds the website and pushes them to https://hogenttin.github.io/hogent-mkdocs/ whenever a commit is pushed to the `main` branch. This is done using using [GitHub actions](https://docs.github.com/en/actions) . You can find the workflow in the [.github](./.github) folder.
 
 </details>
-
