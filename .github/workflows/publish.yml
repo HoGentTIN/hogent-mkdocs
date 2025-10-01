@@ -22,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0 # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin?tab=readme-ov-file#note-when-using-build-environments
       - uses: actions/configure-pages@v5
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
       - run: pip install --requirement requirements.txt
       - run: mkdocs build
       - uses: actions/upload-pages-artifact@v3
